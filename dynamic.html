@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dynamic</title>
+
+</head>
+
+
+<body >
+
+    <p>This is first element</p>
+
+    <div id="main_div"></div>
+
+    
+      
+</body>
+
+<script>
+
+    var x = document.createElement("BUTTON");
+        var t = document.createTextNode("Click me");
+        x.id ='someId';
+      
+        x.appendChild(t);
+        document.getElementById('main_div').appendChild(x);  
+
+
+      
+        document.getElementById("someId").addEventListener("click", function() {
+     
+     
+            if( ! document.getElementById('PId')){
+
+       
+            var x = document.createElement("p");
+        var t = document.createTextNode("This is paragraph");
+        x.id ='PId';
+      
+        x.appendChild(t);
+        document.getElementById('main_div').appendChild(x);
+            }
+});
+      
+    //   function alertFunction(){
+    //       // alert("This is alert");
+      
+    //       var x = document.createElement("p");
+    //     var t = document.createTextNode("This is paragraph");
+    //     x.id ='PId';
+      
+    //     x.appendChild(t);
+    //     document.getElementById('main_div').appendChild(x);  
+    //   }
+          </script>
+</html>
