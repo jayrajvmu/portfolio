@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,500&family=Ubuntu:wght@300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navbar */
+.navbar {
+    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    font-family: "Ubuntu";
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.navbar.sticky {
+    background-color: crimson;
+
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span {
+    color: crimson;
+
+}
+
+.navbar.sticky .logo a span {
+    color: white;
+
+}
+
+.navbar .menu li a {
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+}
+
+.navbar .menu li a:hover {
+    color: crimson;
+}
+
+.navbar.sticky ul li a:hover {
+    color: white;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 25px;
+
+}
+
+/* navbar */
+/* menu-btn style */
+
+.menu-btn {
+    color: white;
+    font-size: 20px !important;
+    display: none;
+}
+
+.menu-btn i.active:before {
+    content: '\f00d';
+}
+
+/* menu-btn style */
+/* Home */
+.home {
+    display: flex;
+    background: url(./images/background.jpg);
+
+    color: white;
+    font-family: "Ubuntu";
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    font-weight: 500;
+    color: crimson;
+}
+
+.home-content a {
+    display: inline-block;
+    color: white;
+    background: crimson;
+    padding: 12px 36px;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    margin-top: 12px;
+    transition: all 0.3s ease;
+}
+
+.home-content a:hover {
+    background: none;
+    color: crimson;
+}
+
+/* Home */
+
+/* About style */
+section {
+    padding: 100px 0;
+    height: 100vh;
+}
+
+.about,
+.skill {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-title {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 80px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.about-title::before {
+    content: "";
+    width: 180px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+}
+
+.about-title::after {
+    content: "who i am";
+    color: crimson;
+    position: absolute;
+    bottom: -12px;
+    font-size: 20px;
+    padding: 5px;
+    left: 50%;
+    background: white;
+    transform: translateX(-50%);
+
+
+}
+
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.right .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.right .text span {
+    color: crimson;
+}
+
+.right p {
+    text-align: justify;
+}
+
+/* About style */
+
+
+
+
+
+
+/* skill styleing */
+
+.skill-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.skill .skill-title {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 80px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.skill-title::before {
+    content: "";
+    width: 180px;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+}
+
+.skill-title::after {
+    content: "what i know";
+    color: crimson;
+    position: absolute;
+    bottom: -12px;
+    font-size: 20px;
+    padding: 5px;
+    left: 50%;
+    background: white;
+    transform: translateX(-50%);
+
+
+}
+
+.skill .skill-content .colomn {
+    width: calc(50% - 30px);
+}
+
+.skill .skill-content .right .bars {
+    margin-bottom: 5px;
+}
+
+.skill .skill-content .right .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill .skill-content .right .line {
+    width: 100%;
+    height: 5px;
+    background: lightgrey;
+    position: relative;
+}
+
+.skill .skill-content .right .line::before {
+    content: '';
+    position: absolute;
+
+    height: 100%;
+    background: crimson;
+    top: 0;
+    left: 0;
+}
+
+.skill .skill-content .right .html::before {
+
+    width: 90%;
+}
+
+.skill .skill-content .right .css::before {
+
+    width: 60%;
+}
+
+.skill .skill-content .right .js::before {
+
+    width: 70%;
+}
+
+.skill .skill-content .right .rj::before {
+
+    width: 50%;
+}
+
+.skill .skill-content .right .php::before {
+
+    width: 70%;
+}
+
+/* skill styleing */
+
+
+
+
+/* Resonsove styling */
+@media (max-width: 1300px) {
+    .home .max-width {
+
+        margin-left: 0px;
+
+    }
+
+
+}
+
+@media (max-width: 1104px) {
+
+    .about-content .left img {
+        height: 350px;
+        width: 350px;
+
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .max-width {
+
+        padding: 0 50px;
+
+    }
+
+}
+
+@media (max-width: 947px) {
+    .max-width {
+
+        padding: 0 50px;
+
+    }
+    section {
+        padding: 150px 0;
+        height: 100vh;
+    }
+    .navbar .menu {
+        position: fixed;
+        background: rgb(26, 24, 22);
+        left: -100%;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        transition: all 0.5s ease;
+        padding-top: 120px;
+
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+        margin-left: 0px;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+    }
+
+
+
+
+    .menu-btn {
+        z-index: 999;
+        display: block;
+    }
+
+
+
+    .home .home-content .text-2 {
+        font-size: 65px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 30px;
+
+    }
+
+    .about .about-content .coloum,
+    .skill .skill-content .colomn
+     {
+        width: 100%;
+    }
+
+    .max-width {
+        max-width: 800px;
+    }
+
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right {
+        flex: 100%
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+
+        padding: 0 23px;
+
+    }
+
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 25px;
+
+    }
+}
+
+/* Resonsove styling */
