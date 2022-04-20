@@ -5,7 +5,9 @@
     margin: 0;
     text-decoration: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /* navbar */
 .navbar {
     padding: 30px 0;
