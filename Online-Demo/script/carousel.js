@@ -1,4 +1,4 @@
-const images=[ '/images/02.webp', '/images/04.webp', '/images/05.jpg']
+const images=[ 'test/Online-Demo/images/02.webp', 'test/Online-Demo/images/04.webp', 'test/Online-Demo/images/05.jpg']
 
 
 const imagetag=document.getElementById('imagetag');
@@ -13,7 +13,7 @@ function myFunction() {
  let currentValue=imagetag.src;  
 
 
- let position = currentValue.search("/images");
+ let position = currentValue.search("test/Online-Demo/images");
  let originalVal =(currentValue.slice(position));
  const index = images.findIndex(image => image == originalVal);
 
@@ -45,7 +45,7 @@ function myFunction2() {
 
  let currentValue=imagetag.src;  
  console.log(currentValue);
- let position = currentValue.search("/images");
+ let position = currentValue.search("test/Online-Demo/images");
  let originalVal =(currentValue.slice(position));
  console.log(originalVal);
  const index = images.findIndex(image => image == originalVal);
@@ -99,7 +99,7 @@ setInterval(myTimer, 4000);
 
 let currentImageValue=imagetag.src;  
 
-let CurrentPosition = currentImageValue.search("/images");
+let CurrentPosition = currentImageValue.search("test/Online-Demo/images");
 let ImageOriginalVal =(currentImageValue.slice(CurrentPosition));
 console.log(ImageOriginalVal)
 function myTimer() {
