@@ -1,0 +1,223 @@
+* {
+    text-decoration: none !important;
+    margin: none;
+    padding: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(235, 236, 241) !important;
+}
+
+.main .container i {
+    font-size: 70px;
+    color: rgb(13, 180, 13);
+}
+
+.main .container h3 {
+    font-size: 50px;
+
+}
+
+.main .container h3 span {
+
+    color: rgb(8, 207, 91);
+}
+
+.main .container .menu a {
+
+    padding: 0 10px;
+    color: rgb(8, 207, 91);
+    border-bottom: 2px solid transparent;
+    font-weight: 600;
+}
+
+.main .container .menu a:hover {
+
+    border-bottom: 2px solid black;
+}
+
+
+
+.main .menubar a {
+    color: white;
+    font-size: 12px;
+    border-bottom: 2px solid transparent;
+
+}
+.main .menubar a:hover {
+    color: rgb(8, 207, 91);
+    border-bottom: 1px solid rgb(8, 207, 91);
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+
+.left .category,
+.left .new-arriaval,
+.left .up-comming{
+    margin: 10px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 13px 22px 62px -23px rgba(218, 188, 188, 0.75);
+
+
+}
+
+
+
+.left div a{
+  font-size: 12px;
+  color: #000;
+
+}
+
+.new-arriaval-title, .up-comming-title{
+    font-size: 10px !important;
+
+ }
+.left div h5{
+   font-size: 15px;
+
+ 
+}
+
+
+.left div h5:hover{
+    color: rgb(8, 207, 91);
+}
+
+
+.content .left{
+    min-width: 230px;
+}
+
+
+.category-item img{
+    width: 25px;
+    height:25px;
+    object-fit: contain;
+}
+
+.category-item {
+margin-left: 10px;
+}
+.content .right{
+ margin: 10px;
+}
+
+
+
+.right .top-image  img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height:180px;
+
+}
+
+
+.shopping-items .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-left: 20%;
+}
+
+
+.card {
+    width: 13rem !important;
+    border: 2px solid transparent !important;
+    box-shadow: 13px 22px 62px -23px rgba(0, 0, 0, 0.75);
+    padding-top: 10px !important;
+  
+  }
+  
+  .card:hover {
+    border: 2px solid rgb(23, 216, 23);
+  }
+  
+  .row {
+    padding: 20px !important;
+  }
+  
+  .card-body{
+      padding-bottom: 2px !important;
+  } 
+.card-body .card-title{
+   font-size: 13px;
+}
+
+.badgecolor{
+    background-color: rgb(8 207 91) !important;
+}
+  .navbar-expand-lg {
+    justify-content: space-between !important;
+  }
+  
+  .shopping-items {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .welcome{
+      margin: 30px 10px 10px 30px;
+  }
+  .welcome h1  {
+    color: rgb(8, 207, 91);
+  }
+  .welcome h1  span{
+    color: rgb(0, 0, 0);
+  }
+.new-arriaval-item, .up-comming-item, .category-item{
+    display: flex;
+    padding: 10px 0!important;
+}
+  
+.new-arriaval-item img,
+.up-comming-item img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.new-arriaval-item-data, .up-comming-item-data, .category-item-data{
+    margin-left: 20px;
+ }
+ .new-arriaval-item-data h6 i, .up-comming-item-data h6 i{
+    color: #ff9f00;
+    font-size: 12px;
+ }
+ .new-arriaval-item-data h6 , .up-comming-item-data h6{
+  margin: 0;
+ }
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .main .container .menu {
+        display: none;
+    }
+
+
+
+    .content .left {
+        display: none;
+    }
+    .right .top-image  img{
+
+        height:120px;
+    
+    }
+}
