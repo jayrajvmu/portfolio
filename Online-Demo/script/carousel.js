@@ -15,7 +15,7 @@ function myFunction() {
 
  let position = currentValue.search("https://jayrajvmu.github.io/test/Online-Demo/images");
  let originalVal =(currentValue.slice(position));
- const index = images.findIndex(image => image == originalVal);
+ const index = images.findIndex(image => image == currentValue);
 
 
 
@@ -48,7 +48,7 @@ function myFunction2() {
  let position = currentValue.search("https://jayrajvmu.github.io/test/Online-Demo/images");
  let originalVal =(currentValue.slice(position));
  console.log(originalVal);
- const index = images.findIndex(image => image == originalVal);
+ const index = images.findIndex(image => image == currentValue);
  console.log(index)
 
 if(index==0){
@@ -110,7 +110,7 @@ function myTimer() {
     let ImageOriginalVal =(currentImageValue.slice(CurrentPosition));
     console.log(ImageOriginalVal)
 
-    const ImageIndex = images.findIndex(image => image == ImageOriginalVal);
+    const ImageIndex = images.findIndex(image => image == currentImageValue);
  console.log(ImageIndex)
 
 
